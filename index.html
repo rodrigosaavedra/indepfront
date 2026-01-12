@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos en Línea - Municipalidad de Independencia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <img src="logo.png" alt="Municipalidad de Independencia" class="logo-img">
+            <h1 class="main-title">Ilustre Municipalidad de Independencia</h1>
+            <a href="https://www.independencia.cl" class="top-bar-link" target="_blank">www.independencia.cl</a>
+        </div>
+    </div>
+    
+    <header class="header">
+        <p class="subtitle-main">Pagos en Línea</p>
+        <p class="motivational-text">Vecino, realiza tus trámites de forma rápida, segura y sin salir de casa</p>
+    </header>
+    
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&h=600&fit=crop&q=95" alt="Permisos de Circulación">
+                <div class="slide-caption">
+                    <h3>Permisos de Circulación</h3>
+                    <p>Renueva tu permiso de circulación de forma rápida y segura</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&h=600&fit=crop&q=95" alt="Patente Comercial">
+                <div class="slide-caption">
+                    <h3>Patente Comercial</h3>
+                    <p>Gestiona tu patente comercial en línea</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&h=600&fit=crop&q=95" alt="Derechos de aseo">
+                <div class="slide-caption">
+                    <h3>Derechos de Aseo</h3>
+                    <p>Paga tus derechos de aseo municipal</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=600&fit=crop&q=95" alt="Certificados de OBRAS">
+                <div class="slide-caption">
+                    <h3>Certificados de OBRAS</h3>
+                    <p>Obtén tus certificados de obras y construcción</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=1920&h=600&fit=crop&q=95" alt="Multas SERVEL">
+                <div class="slide-caption">
+                    <h3>Multas SERVEL</h3>
+                    <p>Consulta y paga tus multas electorales</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1920&h=600&fit=crop&q=95" alt="Pago de Multas TAG">
+                <div class="slide-caption">
+                    <h3>Pago de Multas TAG</h3>
+                    <p>Paga tus multas de TAG y peajes</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="slider-btn prev" onclick="moveSlide(-1)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button class="slider-btn next" onclick="moveSlide(1)">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="section-title">
+            <h2>Servicios de Pago Disponibles</h2>
+            <p>Selecciona el servicio que necesitas</p>
+        </div>
+
+        <div class="links-container">
+            <a href="#" class="payment-link">
+                <div class="link-content">
+                    <span class="link-text">Permisos de Circulación</span>
+                    <div class="link-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="payment-link">
+                <div class="link-content">
+                    <span class="link-text">Patente Comercial</span>
+                    <div class="link-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="payment-link">
+                <div class="link-content">
+                    <span class="link-text">Derechos de aseo</span>
+                    <div class="link-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="payment-link">
+                <div class="link-content">
+                    <span class="link-text">Certificados de OBRAS</span>
+                    <div class="link-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="payment-link">
+                <div class="link-content">
+                    <span class="link-text">Multas SERVEL</span>
+                    <div class="link-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="payment-link">
+                <div class="link-content">
+                    <span class="link-text">Pago de Multas TAG</span>
+                    <div class="link-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2026 <span class="footer-highlight">Municipalidad de Independencia</span></p>
+        <p class="footer-info">Av. Independencia 753, Independencia, Santiago</p>
+        <p class="footer-info">Teléfono: +56 2 2730 7000 | Email: contacto@independencia.cl</p>
+    </footer>
+    
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        function showSlide(index) {
+            if (index >= slides.length) currentSlideIndex = 0;
+            if (index < 0) currentSlideIndex = slides.length - 1;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[currentSlideIndex].classList.add('active');
+            dots[currentSlideIndex].classList.add('active');
+        }
+        
+        function moveSlide(direction) {
+            currentSlideIndex += direction;
+            if (currentSlideIndex >= slides.length) currentSlideIndex = 0;
+            if (currentSlideIndex < 0) currentSlideIndex = slides.length - 1;
+            showSlide(currentSlideIndex);
+        }
+        
+        function currentSlide(index) {
+            currentSlideIndex = index;
+            showSlide(currentSlideIndex);
+        }
+        
+        // Auto-play slider
+        setInterval(() => {
+            moveSlide(1);
+        }, 5000);
+    </script>
+</body>
+</html>
